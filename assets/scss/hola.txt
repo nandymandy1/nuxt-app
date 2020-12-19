@@ -1,0 +1,33 @@
+Nav Links
+Helvatica 18 bold
+
+Headings Helvatica Compressed medium font-size 80px
+
+Quick Links Helvatica Regular font-size 32
+
+
+Blog card Heading Helvatica Bold 40px
+Blog Sub heading Helvatica Oblique 24px
+Exceprt Helvatica Regular font-size 28
+Read More Helvatica Bold font-size 28
+
+
+Rachel Green H Regular 44
+Position Helvatica Oblique 28px
+
+Some of the many
+Compress md 64
+Smiles - Callibri Bold Italic 64
+
+
+Button - Callibri 32 px bold
+
+
+Section Sub Heading 
+Bold Helvatica 40px
+Content Helvatica 32 regular
+
+
+Form Fields Placeholders Helvatica 27 regular
+
+Footer-links Helvatica 24 bold
