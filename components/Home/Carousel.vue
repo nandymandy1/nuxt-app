@@ -1,5 +1,5 @@
 <template>
-  <div class="mudransh-carousel my-5 pt-5">
+  <div class="mudransh-carousel mt-5 pt-5">
     <br />
     <b-carousel
       controls
@@ -15,11 +15,11 @@
       <b-carousel-slide v-for="banner in banners" :key="banner.id">
         <template #img>
           <img
-            class="d-block img-fluid w-100"
             width="1024"
             height="480"
-            :src="banner.featured_image.large"
             alt="image slot"
+            class="d-block img-fluid w-100"
+            :src="banner.featured_image.large"
           />
         </template>
         <h3>{{ banner.title }}</h3>

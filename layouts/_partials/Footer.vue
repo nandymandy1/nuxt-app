@@ -10,8 +10,8 @@
           <p class="footer-heading">CONTACT US</p>
           <a href="tel:05223574076" class="footer-link">+ (0522) 357 4076</a>
           <br />
-          <a href="mailto:support@mudransh.com" class="footer-link"
-            >support@mudransh.com</a
+          <a href="mailto:info@mudransh.com" class="footer-link">
+            info@mudransh.com</a
           >
           <br />
           <a href="tel:44345678903" class="footer-link">Find Store</a> <br />
@@ -54,7 +54,7 @@
           <br />
           <NuxtLink class="footer-link" to="/privacy">Privacy Policy</NuxtLink>
           <br />
-          <NuxtLink class="footer-link" to="/">Careers</NuxtLink>
+          <NuxtLink class="footer-link" to="/work">Careers</NuxtLink>
           <br />
           <NuxtLink class="footer-link" to="/">Faq's</NuxtLink>
           <br />

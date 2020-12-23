@@ -42,6 +42,7 @@ export default {
       title: `Mudransh | Features`,
     };
   },
+  scrollToTop: true,
   methods: {
     async getFeatures() {
       this.isLoading = true;

@@ -35,6 +35,7 @@ export default {
       title: `Mudransh | ${this.data.title}`,
     };
   },
+  scrollToTop: true,
   async asyncData({ $axios, params }) {
     let { data } = await $axios.get(`/wl/v1/posts/${params.id}`);
     return { data };

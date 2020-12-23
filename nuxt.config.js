@@ -14,7 +14,7 @@ export default {
   css: ["@/assets/scss/main.scss"],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [{ src: "@/plugins/apex.js", ssr: false }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -47,11 +47,14 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: "https://mudransh.000webhostapp.com/wp-json/"
+    // baseURL: "https://mudransh.000webhostapp.com/wp-json/"
+    baseURL: "http://mudraone.local/wp-json/"
   },
   generate: {
     fallback: true
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {}
+  build: {
+    vendor: ["vue-apexchart"]
+  }
 };

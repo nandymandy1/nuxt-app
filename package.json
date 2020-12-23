@@ -15,12 +15,14 @@
     "@nuxtjs/axios": "^5.12.2",
     "@nuxtjs/pwa": "^3.0.2",
     "@tryghost/content-api": "^1.4.10",
+    "apexcharts": "^3.23.0",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
     "loanjs": "^1.0.4",
     "nuxt": "^2.14.6",
-    "nuxt-fontawesome": "^0.4.0"
+    "nuxt-fontawesome": "^0.4.0",
+    "vue-apexcharts": "^1.6.0"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.1",

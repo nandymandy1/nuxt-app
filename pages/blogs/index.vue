@@ -27,6 +27,7 @@ export default {
   data: () => ({
     posts: [],
   }),
+  scrollToTop: true,
   methods: {
     async getAllPosts() {
       let { data } = await this.$axios("/wl/v1/posts");

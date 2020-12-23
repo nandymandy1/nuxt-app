@@ -1,5 +1,5 @@
 <template>
-  <section class="testimonials bg-testimonial py-5 mt-5">
+  <section class="testimonials bg-testimonial py-5">
     <div class="container py-5 mt-3">
       <div class="row">
         <div

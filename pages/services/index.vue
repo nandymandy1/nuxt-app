@@ -9,20 +9,16 @@
         <Dots :length="15" />
       </div>
       <div class="row px-4">
-        <div class="col-md-6 col-sm-12">
-          <p class="mudransh-text text-gray-darken">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rerum
-            maiores laboriosam adipisci nulla cupiditate in repudiandae et quo
-            voluptate, a molestias sapiente? Sapiente facilis incidunt, atque
-            repellendus corporis ea?
-          </p>
-          <p class="mudransh-text text-gray-darken">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            adipisci, in doloribus, dicta numquam ullam sint blanditiis aut
-            officia doloremque impedit explicabo, accusamus iure. Debitis
-            voluptatem dolore magni hic molestias minus ipsam, optio quas
-            soluta.
-          </p>
+        <div class="col-md-6 col-sm-12 font-weight-bold">
+          <p>We help you to raise your dreams through our services.</p>
+          <ul class="text-danger font-weight-bold">
+            <li>Customer first.</li>
+            <li>There is a wide choice (all banks in one roof)</li>
+            <li>Easy and hastle free banking.</li>
+            <li>Highly trusted.</li>
+            <li>Safe and secure.</li>
+            <li>Full Transparency in the process.</li>
+          </ul>
         </div>
         <div class="col-md-6 col-sm-12">
           <img
@@ -33,7 +29,7 @@
         </div>
       </div>
       <div class="row px-4 mt-5">
-        <div class="col-">
+        <div class="col-12">
           <div class="d-flex mb-5">
             <div class="line-yellow align-self-center mr-3" />
             <div>
@@ -70,25 +66,28 @@
           />
         </div>
         <div class="col-md-7 col-sm-12">
-          <p class="mudransh-text text-gray-darken">
+          <p class="text-gray-darken">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
             corporis aperiam rem veniam eos nulla eius voluptate veritatis
             explicabo itaque, optio, architecto velit, doloribus vel maxime
             perferendis eveniet. Facilis, nostrum.
           </p>
-          <p class="mudransh-text text-gray-darken">
+          <p class="text-gray-darken">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
             corporis aperiam rem veniam eos nulla eius voluptate veritatis
             explicabo itaque, optio, architecto velit, doloribus vel maxime
             perferendis eveniet. Facilis, nostrum.
           </p>
-          <p class="mudransh-text text-gray-darken">
+          <p class="text-gray-darken">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
             quo.
           </p>
-          <button class="btn btn-outline-danger px-5 font-weight-bold">
+          <NuxtLink
+            to="/contact"
+            class="btn btn-outline-danger px-5 font-weight-bold"
+          >
             CONTACT NOW
-          </button>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -117,6 +116,7 @@ export default {
       this.isLoading = false;
     },
   },
+  scrollToTop: true,
   created() {
     this.getAllServices();
   },

@@ -64,5 +64,6 @@ export default {
       title: "Mudransh | Privacy Policy",
     };
   },
+  scrollToTop: true,
 };
 </script>

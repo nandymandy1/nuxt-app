@@ -61,5 +61,6 @@ export default {
       title: "Mudransh | Terms & Conditions",
     };
   },
+  scrollToTop: true,
 };
 </script>

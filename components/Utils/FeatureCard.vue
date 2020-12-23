@@ -9,7 +9,7 @@
           </p>
           <NuxtLink
             :to="`/${type}/${feature.slug}`"
-            class="btn btn-outline-danger px-5 font-weight-bold"
+            class="btn btn-outline-danger px-5 font-weight-bold mb-3"
           >
             READ MORE
           </NuxtLink>

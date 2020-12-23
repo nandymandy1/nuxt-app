@@ -44,9 +44,9 @@
                 EMI Calculator
               </NuxtLink>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <NuxtLink class="nav-link mr-2" to="/blogs"> Blogs </NuxtLink>
-            </li>
+            </li> -->
             <li class="nav-item">
               <NuxtLink class="nav-link mr-2" to="/contact">
                 Contact Us

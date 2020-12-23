@@ -72,6 +72,7 @@ export default {
   data: () => ({
     teamMembers: [],
   }),
+  scrollToTop: true,
   methods: {
     async getTeamMembers() {
       let { data } = await this.$axios("/wl/v1/teams");
