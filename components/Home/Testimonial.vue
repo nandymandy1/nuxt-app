@@ -11,19 +11,19 @@
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-md-6 col-sm-12 mx-auto">
           <h2 class="testimonial-section-caption text-white">
             SOME OF THE MANY <span class="testimonial-span">SMILES</span> WE’VE
             REINFORCED
           </h2>
         </div>
-        <div
+        <!-- <div
           class="col-md-6 col-sm-12 d-flex flex-column justify-content-center px-5"
         >
           <button class="btn btn-block btn-outline-white">
             MEET OUR CUSTOMERS
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -34,7 +34,6 @@ import TestimonialCard from "../Utils/Testimonialcard";
 export default {
   name: "AppTestimonial",
   components: { TestimonialCard },
-
   data: () => ({
     testimonials: [],
   }),

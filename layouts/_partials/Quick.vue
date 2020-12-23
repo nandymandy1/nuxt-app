@@ -4,9 +4,9 @@
   >
     <div class="align-self-center d-flex flex-wrap">
       <NuxtLink class="quick-link" to="/faqs">FAQ's</NuxtLink>
-      <NuxtLink class="quick-link" to="/stories">Success Stories</NuxtLink>
-      <NuxtLink class="quick-link" to="/media">Media</NuxtLink>
-      <NuxtLink class="quick-link" to="/careers">Careers</NuxtLink>
+      <!-- <NuxtLink class="quick-link" to="/stories">Success Stories</NuxtLink> -->
+      <!-- <NuxtLink class="quick-link" to="/media">Media</NuxtLink> -->
+      <NuxtLink class="quick-link" to="/work">Careers</NuxtLink>
     </div>
     <div class="align-self-center d-flex">
       <img

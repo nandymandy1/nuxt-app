@@ -14,25 +14,29 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde odit
         facere similique delectus qui mollitia.
       </p>
-      <Loader v-if="isLoading" />
-      <div v-else>
-        <FeatureCard
-          v-for="feature in features"
-          :key="feature.id"
-          :feature="feature"
-          type="features"
-        />
+      <div class="col-12" v-if="isLoading">
+        <div class="card loan-card">
+          <div class="card-body">
+            <SkeletonLoader />
+          </div>
+        </div>
       </div>
+      <FeatureCard
+        v-for="feature in features"
+        :key="feature.id"
+        :feature="feature"
+        type="features"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import Loader from "@/components/Utils/Loader";
 import FeatureCard from "@/components/Utils/FeatureCard";
+import SkeletonLoader from "@/components/Utils/SkeletonLoader";
 export default {
   name: "MudranshFeatures",
-  components: { Loader, FeatureCard },
+  components: { FeatureCard, SkeletonLoader },
   data: () => ({
     features: [],
     isLoading: false,

@@ -1,8 +1,8 @@
 <template>
   <div class="pt-5 mt-5 py-5 bg-light-gray contact-section">
     <div class="mt-5">
-      <div class="row">
-        <div class="col-md-6 col-sm-12 ml-auto">
+      <div class="row pr-2">
+        <div class="col-md-7 col-sm-12 ml-auto pl-2">
           <div v-if="message">
             <div class="alert alert-success" v-if="success && message">
               <p>{{ message }}</p>

@@ -26,6 +26,9 @@
             <li class="nav-item">
               <NuxtLink class="nav-link mr-2" to="/about">About Us</NuxtLink>
             </li>
+            <li class="nav-item">
+              <NuxtLink class="nav-link mr-2" to="/offers">Our Offers</NuxtLink>
+            </li>
             <b-nav-item-dropdown text="Products" right class="mr-2">
               <NuxtLink class="dropdown-item" to="/features">
                 All Products

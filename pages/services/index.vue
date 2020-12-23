@@ -39,7 +39,13 @@
             </div>
           </div>
         </div>
-        <Loader v-if="isLoading" />
+        <div class="col-12" v-if="isLoading">
+          <div class="card border-0 border-none">
+            <div class="card-body">
+              <SkeletonLoader />
+            </div>
+          </div>
+        </div>
         <template v-else>
           <div class="col-12" v-for="service in services" :key="service.id">
             <FeatureCard :feature="service" type="services" />
@@ -95,10 +101,10 @@
 </template>
 
 <script>
-import Loader from "@/components/Utils/Loader";
 import FeatureCard from "@/components/Utils/FeatureCard";
+import SkeletonLoader from "@/components/Utils/SkeletonLoader";
 export default {
-  components: { FeatureCard, Loader },
+  components: { FeatureCard, SkeletonLoader },
   name: "MudranshServices",
   head() {
     return { title: `Mudransh | Services` };

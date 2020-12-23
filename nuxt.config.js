@@ -47,8 +47,8 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    // baseURL: "https://mudransh.000webhostapp.com/wp-json/"
-    baseURL: "http://mudraone.local/wp-json/"
+    baseURL: "https://mudransh.000webhostapp.com/wp-json/"
+    // baseURL: "http://mudraone.local/wp-json/"
   },
   generate: {
     fallback: true
