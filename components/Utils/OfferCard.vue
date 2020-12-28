@@ -8,8 +8,8 @@
             {{ feature.excerpt }}
           </p>
           <NuxtLink
+            class="button button-1 button-1c bg-danger text-decoration-none text-white"
             :to="`/${type}/${feature.slug}`"
-            class="btn btn-outline-danger px-5 font-weight-bold mb-3"
           >
             READ MORE
           </NuxtLink>

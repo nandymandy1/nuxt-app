@@ -7,12 +7,17 @@
           <p class="text-muted">
             {{ feature.excerpt }}
           </p>
-          <NuxtLink
-            :to="`/${type}/${feature.slug}`"
-            class="btn btn-outline-danger px-5 font-weight-bold mb-3"
-          >
-            READ MORE
-          </NuxtLink>
+          <div class="d-flex justify-content-start align-items-center">
+            <NuxtLink
+              class="button button-1 button-1c bg-danger text-decoration-none text-white"
+              :to="`/${type}/${feature.slug}`"
+            >
+              READ MORE
+            </NuxtLink>
+            <button class="button button-1 button-1c bg-yellow ml-1">
+              APPLY NOW
+            </button>
+          </div>
         </div>
         <div class="col-md-5">
           <img
@@ -38,5 +43,8 @@ export default {
       required: true,
     },
   },
+  data: () => ({
+    showModal: false,
+  }),
 };
 </script>

@@ -7,14 +7,14 @@
         </h1>
       </div>
       <div
-        class="bg-danger flex-grow-1 d-flex justify-content-between align-items-center px-5"
+        class="bg-danger flex-grow-1 d-flex justify-content-between align-items-center px-5 flex-wrap"
       >
         <h2 class="text-white text-yellow">
           Want to know more about our working style.
         </h2>
         <NuxtLink
           to="/work"
-          class="btn btn-lg btn-outline-warning align-self-center"
+          class="button button-1 button-1c bg-yellow ml-1 text-decoration-none text-white"
         >
           Join Us
         </NuxtLink>

@@ -14,14 +14,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-12 text-center">
-        <img
-          :src="data.featured_image.large"
-          class="img-fluid my-3 mb-5 mx-auto center rounded"
-        />
-      </div>
-      <div class="col-12 ml-5">
-        <div class="feature-content" v-html="data.content" />
+      <div class="col-12">
+        <div class="text-center">
+          <img :src="data.featured_image.large" class="img-fluid" />
+        </div>
+        <div class="px-md-5 mt-5 text-wrap" v-html="data.content" />
       </div>
     </div>
   </div>
@@ -29,16 +26,18 @@
 
 <script>
 export default {
-  name: "ParticularServiceContent",
   head() {
     return {
       title: `Mudransh | ${this.data.title}`,
     };
   },
-  scrollToTop: true,
   async asyncData({ $axios, params }) {
     let { data } = await $axios.get(`/wl/v1/services/${params.id}`);
-    return { data };
+    return {
+      data,
+    };
   },
+  scrollToTop: true,
+  name: "ParticularServiceContent",
 };
 </script>

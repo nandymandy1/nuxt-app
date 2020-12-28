@@ -90,7 +90,7 @@
           </p>
           <NuxtLink
             to="/contact"
-            class="btn btn-outline-danger px-5 font-weight-bold"
+            class="button button-1 button-1c bg-danger text-decoration-none text-white"
           >
             CONTACT NOW
           </NuxtLink>

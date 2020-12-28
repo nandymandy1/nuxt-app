@@ -35,7 +35,9 @@
         </div>
       </form>
       <div class="d-flex justify-content-center align-items-center mt-5">
-        <button class="btn btn-outline-danger px-5 font-weight-bold">
+        <button
+          class="button button-1 button-1c bg-danger text-decoration-none text-white py-3"
+        >
           SUBMIT
         </button>
       </div>
