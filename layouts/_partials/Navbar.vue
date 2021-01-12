@@ -89,6 +89,7 @@ export default {
   created() {
     this.fetchAllFeatures();
     this.fetchAllServices();
+    this.$store.commit("cart/SET_CART");
   },
 };
 </script>

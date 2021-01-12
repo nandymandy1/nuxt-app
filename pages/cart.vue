@@ -77,8 +77,8 @@ export default {
       totalPrice: "cart/totalPrice",
     }),
   },
-  created() {
-    this.$store.commit("cart/SET_CART");
-  },
+  // created() {
+  //   this.$store.commit("cart/SET_CART");
+  // },
 };
 </script>
