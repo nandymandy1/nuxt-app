@@ -37,5 +37,8 @@ export default {
     HomeContact,
     FinancialFriend,
   },
+  created() {
+    this.$store.commit("cart/SET_CART");
+  },
 };
 </script>

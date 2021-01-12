@@ -7,6 +7,7 @@
           <p class="text-muted">
             {{ feature.excerpt }}
           </p>
+          <h5>₹ {{ feature.price }}/-</h5>
           <div class="d-flex justify-content-start align-items-center">
             <NuxtLink
               class="button button-1 button-1c bg-danger text-decoration-none text-white"
@@ -14,8 +15,11 @@
             >
               READ MORE
             </NuxtLink>
-            <button class="button button-1 button-1c bg-yellow ml-1">
-              APPLY NOW
+            <button
+              class="button button-1 button-1c bg-yellow ml-1"
+              @click="addToCart"
+            >
+              ADD TO CART
             </button>
           </div>
         </div>
@@ -46,5 +50,10 @@ export default {
   data: () => ({
     showModal: false,
   }),
+  methods: {
+    addToCart() {
+      this.$store.commit("cart/ADD_PRODUCT", this.feature);
+    },
+  },
 };
 </script>

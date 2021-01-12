@@ -26,7 +26,13 @@
           @click="modalShow = true"
           class="btn btn-outline-danger px-5 font-weight-bold"
         >
-          Apply Now
+          BUY NOW
+        </button>
+        <button
+          @click="addToCart"
+          class="btn btn-outline-danger px-5 font-weight-bold"
+        >
+          ADD TO CART
         </button>
       </div>
     </div>
@@ -112,7 +118,7 @@
           :disabled="applcationDisabled || loading"
           class="btn-custom-submit px-5 py-2 font-weight-bold"
         >
-          Apply Now
+          Buy now
         </button>
       </template>
     </b-modal>
@@ -120,6 +126,7 @@
 </template>
 
 <script>
+import { mapMutations } from "vuex";
 export default {
   name: "ParticularFeatureContent",
   head() {
@@ -195,8 +202,9 @@ export default {
         }, 5000);
       }
     },
+    addToCart() {
+      this.$store.commit("cart/ADD_PRODUCT", this.data);
+    },
   },
 };
 </script>
-<style lang="scss" scoped>
-</style>

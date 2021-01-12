@@ -20,9 +20,9 @@
             <li class="nav-item">
               <NuxtLink class="nav-link mr-2" to="/">Home</NuxtLink>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <NuxtLink class="nav-link mr-2" to="/services">Services</NuxtLink>
-            </li>
+            </li> -->
             <li class="nav-item">
               <NuxtLink class="nav-link mr-2" to="/about">About Us</NuxtLink>
             </li>
@@ -43,8 +43,15 @@
               </NuxtLink>
             </b-nav-item-dropdown>
             <li class="nav-item">
-              <NuxtLink class="nav-link mr-2" to="/emi">
-                EMI Calculator
+              <NuxtLink class="nav-link mr-2" to="/cart">
+                <!-- EMI Calculator -->
+                <span
+                  v-if="$store.getters['cart/cartQty']"
+                  class="badge badge-pill badge-danger"
+                  :style="{ float: 'right', marginBottom: '-10px' }"
+                  >{{ $store.getters["cart/cartQty"] }}</span
+                >
+                Cart
               </NuxtLink>
             </li>
             <!-- <li class="nav-item">

@@ -4,7 +4,7 @@
       <div class="d-flex justify-content-center align-items-center mb-5">
         <Dots :length="15" />
         <h1 class="mudransh-heading text-center text-danger mx-4">
-          OUR FEATURES
+          OUR PRODUCTS
         </h1>
         <Dots :length="15" />
       </div>
