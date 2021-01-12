@@ -1,8 +1,8 @@
 import _ from 'lodash';
 
-const state = {
+const state = () => ({
     cart: []
-};
+});
 
 const getters = {
     totalPrice: state => {
@@ -11,7 +11,7 @@ const getters = {
         });
     },
     cart: state => {
-        return state.cart
+        return state.cart;
     },
     cartQty: state => state.cart.length
 };
@@ -57,7 +57,6 @@ const mutations = {
 };
 
 export default {
-    namespaced: true,
     mutations,
     getters,
     actions,

@@ -44,13 +44,12 @@
             </b-nav-item-dropdown>
             <li class="nav-item">
               <NuxtLink class="nav-link mr-2" to="/cart">
-                <!-- EMI Calculator -->
                 <span
                   v-if="$store.getters['cart/cartQty']"
                   class="badge badge-pill badge-danger"
                   :style="{ float: 'right', marginBottom: '-10px' }"
-                  >{{ $store.getters["cart/cartQty"] }}</span
-                >
+                  >{{ $store.getters["cart/cartQty"] }}
+                </span>
                 Cart
               </NuxtLink>
             </li>
@@ -86,7 +85,7 @@ export default {
       this.services = data;
     },
   },
-  created() {
+  mounted() {
     this.$store.commit("cart/SET_CART");
     this.fetchAllFeatures();
     this.fetchAllServices();
